@@ -98,14 +98,14 @@ header {
   text-align: center;
 }
 
-#banner {
+#Banner {
   display: flex;
   flex-wrap: wrap; 
   align-items: center;
   justify-content: space-around;
   margin: 0;
   padding: 1rem;
-  background-image: url('../img/banner.png'); /* ← nota el `../` para subir un nivel */
+  background-image: url('../img/Banner.png'); /* ← nota el `../` para subir un nivel */
   background-size: cover;
   height: 30rem;
   background-color: rgba(0, 0, 0, 0.66);
@@ -114,7 +114,7 @@ header {
 
 
 
-#banner #eslogan {
+#Banner #Slogan {
   width: 100%; 
   max-width: 600px;
   text-align: center; /* ← centrado */
@@ -125,104 +125,114 @@ header {
 }
 
 
-#banner img {
+#Banner img {
   max-width: 100%; 
   height: auto;
 }
 
 @media (max-width: 768px) {
-  #banner {
+  #Banner {
     flex-direction: column; 
   }
   
 
-  #DescripcionGeneral .contenedorDescripcion {
+  #GeneralDescription .DescriptionCont {
     flex-direction: column;
     text-align: center; 
     gap: 2rem;
   }
 
-  #Beneficios {
+  #Benefits {
     flex-direction: column;
   }
 
-  #banner #eslogan {
+  #Banner #Slogan {
     text-align: center; 
   }
 
-  #Beneficios .contenedorBeneficios {
+  #Benefits .contenedorBenefits {
     text-align: center;
     gap: 2rem; 
   }
 
-  #banner img {
+  #Banner img {
     width: 80%;
   }
   
-  #Beneficios img {
+  #Benefits img {
     width: 20%;
   }
   
-  #DescripcionGeneral img {
+  #GeneralDescription img {
     width: 80%;
   }
 
-  .puntos {
+  .Points {
     width: 80%;
   }
 }
 
 @media (max-width: 480px) {
-  #banner #eslogan {
+  #Banner #Slogan {
     font-size: 1rem; 
   }
 
-  #banner img {
+  #Banner img {
     width: 100%; 
   }
 
-  #Beneficios img {
+  #Benefits img {
     width: 20%;
   }
   
-  #DescripcionGeneral img {
+  #GeneralDescription img {
     width: 100%;
   }
 
-  .puntos {
+  .Points {
     width: 250px;
   }
 }
 
 @media (max-width: 1097px) {
-  #DescripcionGeneral .contenedorDescripcion {
+  #GeneralDescription .DescriptionCont {
     flex-direction: column;
     text-align: center; 
     gap: 2rem;
   }
-  .contenedorDescripcion {
+  .DescriptionCont {
     flex-direction: column; /* Stack in column layout on smaller screens */
     text-align: center;
   }
 
-  .contenedorDescripcion .puntos {
+  .DescriptionCont .Points {
     order: 1; /* Ensure text appears first */
     width: 70%;
     margin-bottom: 1rem;
   }
 
-  .contenedorDescripcion img {
+  .DescriptionCont img {
     width: 50%;
     order: 2; /* Ensure image appears after text */
   }
 }
 
-#DescripcionGeneral {
+
+
+
+
+
+
+
+
+
+
+#GeneralDescription {
   padding: 4rem 1rem;
   background-color: #f7fdfc; /* tono claro como en la imagen */
 }
 
-.contenedorDescripcion {
+.DescriptionCont {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -260,29 +270,29 @@ header {
 }
 
 
-.contenedorDescripcion:nth-child(even) {
+.DescriptionCont:nth-child(even) {
   flex-direction: row-reverse;
 }
 
-.puntos {
+.Points {
   flex: 1;
   padding: 1rem;
   color: #2c2c2c;
 }
 
-.puntos h3 {
+.Points h3 {
   font-size: 1.5rem;
   color: #0a4c61;
   margin-bottom: 1rem;
 }
 
-.puntos p {
+.Points p {
   font-size: 1rem;
   line-height: 1.6;
   color: #444;
 }
 
-.imagenReferencia {
+.ReferenceImg {
   flex: 1;
   max-width: 430px;
   width: 100%;
@@ -294,7 +304,7 @@ header {
 }
 
 
-.cuadros-info {
+.Table-info {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
@@ -302,7 +312,7 @@ header {
   justify-content: center;
 }
 
-.cuadro {
+.Table {
   background-color: #d8f2f0;
   padding: 1rem;
   border-radius: 0.5rem;
@@ -314,39 +324,39 @@ header {
 
 /* Responsive */
 @media (max-width: 768px) {
-  .contenedorDescripcion {
+  .DescriptionCont {
     flex-direction: column !important;
     text-align: center;
   }
 
-  .puntos {
+  .Points {
     width: 100%;
   }
 
-  .imagenReferencia {
+  .ReferenceImg {
     width: 100%;
   }
 }
-#Beneficios {
+#Benefits {
   background-color: #dff6f5;
   padding: 3rem 1rem;
   text-align: center;
 }
 
-#Beneficios h2 {
+#Benefits h2 {
   font-size: 2rem;
   margin-bottom: 2rem;
   font-weight: bold;
 }
 
-.beneficios-container {
+.Benefits-container {
   display: flex;
   justify-content: center;
   gap: 2rem;
   flex-wrap: wrap;
 }
 
-.beneficio-card {
+.Benefit-card {
   background-color: white;
   padding: 2rem;
   border-radius: 15px;
@@ -355,26 +365,26 @@ header {
   text-align: left;
 }
 
-.beneficio-card img {
+.Benefit-card img {
   width: 100%;
   border-radius: 10px;
   margin-bottom: 1rem;
 }
 
-.beneficio-card h3 {
+.Benefit-card h3 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
   color: #333;
   text-align: center;
 }
 
-.beneficio-card ol {
+.Benefit-card ol {
   padding-left: 1.2rem;
   color: #555;
   font-size: 0.95rem;
 }
 
-.beneficio-card ol li {
+.Benefit-card ol li {
   margin-bottom: 0.75rem;
   line-height: 1.4;
 }
@@ -382,7 +392,7 @@ header {
 
 
 
-#Nosotros {
+#AboutUs {
   padding: 3rem;
   margin: auto;
   max-width: 80rem;
@@ -392,11 +402,11 @@ header {
   padding: 1rem;
 }
 
-.nosotros_text {
+.AboutUs_text {
   max-width: 35rem;
 }
 
-#nosotros_ {
+#AboutUs_ {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -404,7 +414,7 @@ header {
   flex-wrap: wrap;
 }
 
-#lanzar {
+#throw {
   height: 15rem;
   text-align: center;
 }
@@ -416,11 +426,6 @@ button {
   width: 150px;
   border-radius: 5px;
   color: white;
-}
-
-#registro {
-  background-color: var(--principal);
-  height: 30px;
 }
 
 img {
@@ -438,33 +443,16 @@ footer {
   color: white;
 }
 
-#siguenos {
+#SocialMedia {
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
 
-#siguenos img {
+#SocialMedia img {
   margin-left: 1rem;
 }
 
-.formulario {
-  background-color: var(--principal);
-  height: 80vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#Registrarse, #IniciarSesion {
-  background-color: lightgray;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem;
-  border-radius: 10px;
-}
 
 form button {
   margin-left: 90px;
@@ -484,7 +472,7 @@ nav img {
   box-shadow: none;
 }
 
-.contenedorBeneficios img {
+.contenedorBenefits img {
   box-shadow: none;
   width: 5rem;
 }
@@ -524,7 +512,7 @@ nav img {
 }
 
 
-.separadorTitulo {
+.TitleSperator {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -533,14 +521,14 @@ nav img {
   max-width: 800px;
 }
 
-.separadorTitulo h2 {
+.TitleSperator h2 {
   font-size: 1.5rem;
   font-weight: bold;
   color: #1e1e1e;
   margin: 0;
 }
 
-.separadorTitulo hr {
+.TitleSperator hr {
   flex-grow: 1;
   height: 2px;
   background-color: #29b5a8;
@@ -555,7 +543,7 @@ nav img {
   align-items: center;
 }
 
-.contacto-container {
+.Contact-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -564,7 +552,7 @@ nav img {
   width: 100%;
 }
 
-.contacto-info {
+.Contact-info {
   background-color: var(--secundario);
   color: white;
   padding: 2rem;
@@ -578,11 +566,11 @@ nav img {
   gap: 2rem;
 }
 
-.contacto-info i {
+.Contact-info i {
   margin-right: 10px;
 }
 
-.contacto-form {
+.Contact-form {
   background-color: white;
   padding: 2rem;
   border-radius: 1rem;
@@ -595,14 +583,14 @@ nav img {
   gap: 1rem;
 }
 
-.contacto-form h2 {
+.Contact-form h2 {
   margin-bottom: 1rem;
   font-size: 1.5rem;
   color: #222;
 }
 
-.contacto-form input,
-.contacto-form textarea {
+.Contact-form input,
+.Contact-form textarea {
   width: 100%;
   padding: 0.75rem;
   border: 1px solid #ccc;
@@ -611,7 +599,7 @@ nav img {
   font-size: 1rem;
 }
 
-.contacto-form button {
+.Contact-form button {
   background-color: var(--secundario);
   color: white;
   border: none;
@@ -623,19 +611,19 @@ nav img {
   cursor: pointer;
 }
 
-.contacto-form button:hover {
+.Contact-form button:hover {
   background-color: var(--principal);
   color: black;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
-  .contacto-container {
+  .Contact-container {
     flex-direction: column;
     align-items: center;
   }
 
-  .contacto-form button {
+  .Contact-form button {
     width: 100%;
   }
 }
