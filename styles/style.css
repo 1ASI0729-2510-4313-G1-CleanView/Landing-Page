@@ -433,26 +433,6 @@ img {
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
 }
 
-footer {
-  height: 5rem;
-  background-color: rgb(17, 17, 17);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 2rem;
-  color: white;
-}
-
-#SocialMedia {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-#SocialMedia img {
-  margin-left: 1rem;
-}
-
 
 form button {
   margin-left: 90px;
@@ -625,5 +605,130 @@ nav img {
 
   .Contact-form button {
     width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+footer .vectorImg{
+  position: absolute;
+  right: 0;
+  z-index: -10;
+  margin-top: -100px;
+  width: 250px;
+  height: 250px;
+  background-image: url('../img/Vector2.png');
+  background-size: cover;
+}
+
+.FooterCont {
+  height: 21rem;
+  background-image: url('../img/WavePtc.png'); /* ← nota el `../` para subir un nivel */
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .cnt{
+    margin: 5px;
+    width: 38%;
+    height: 100%;
+  }
+}
+
+.FooterCont .TermsAndCond{ 
+  position: relative;
+  left: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 80%;
+  width: 100%;
+}
+
+.FooterCont .TextCtn{
+  text-align: center;
+  width: 100%;
+
+  .StartUp p{
+    font-size: 2pc;
+    font-weight: 550;
+    margin-bottom: 10px;
+  }
+}
+
+.FooterCont .SocialCont{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.FooterCont .SocialMediaCont {
+  width: 100%;
+  height: 25%;
+}
+
+.FooterCont ul{
+  display: flex;
+  justify-content: space-around;
+}
+
+
+/*Change posions of the sons of ul (every li)*/
+
+.FooterCont ul li:nth-child(1){
+  margin-top: -20px;
+}
+.FooterCont ul li:nth-child(2){
+  position: relative;
+  top: 20px;
+}
+.FooterCont ul li:nth-child(3){
+  position: relative;
+  margin-top: -20px;
+  margin-left: 15px;
+}
+
+.FooterCont a {
+    color: #000;
+    text-decoration: none;
+}
+
+.FooterCont ul li {
+  list-style: none;
+
+
+  .fa-brands{
+    font-size: 2.5rem;
+  }
+}
+
+.FooterCont .CopyRightCont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  span{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 100%;
+    position: relative;
+    bottom: 0;
+  }
+}
+
+.FooterCont .AdrressCont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  span{
+    margin: 15px;
   }
 }
