@@ -105,7 +105,7 @@ header {
   justify-content: space-around;
   margin: 0;
   padding: 1rem;
-  background-image: url('../img/Banner.png'); /* ← nota el `../` para subir un nivel */
+  background-image: url('../img/banner1.png'); /* ← nota el `../` para subir un nivel */
   background-size: cover;
   height: 30rem;
   background-color: rgba(0, 0, 0, 0.66);
