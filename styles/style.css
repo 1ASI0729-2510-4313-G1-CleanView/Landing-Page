@@ -14,6 +14,10 @@ section {
   font-family: 'Poppins', sans-serif;
 }
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto; 
+}
 
 body {
   min-height: 100vh;
@@ -142,7 +146,7 @@ header {
     gap: 2rem;
   }
 
-  #Benefits {
+  #HowWork {
     flex-direction: column;
   }
 
@@ -150,17 +154,13 @@ header {
     text-align: center; 
   }
 
-  #Benefits .contenedorBenefits {
+  #HowWork  {
     text-align: center;
     gap: 2rem; 
   }
 
   #Banner img {
     width: 80%;
-  }
-  
-  #Benefits img {
-    width: 20%;
   }
   
   #GeneralDescription img {
@@ -181,8 +181,8 @@ header {
     width: 100%; 
   }
 
-  #Benefits img {
-    width: 20%;
+  #HowWork img {
+    width: 100%;
   }
   
   #GeneralDescription img {
@@ -229,7 +229,7 @@ header {
 
 #GeneralDescription {
   padding: 4rem 1rem;
-  background-color: #f7fdfc; /* tono claro como en la imagen */
+  background-color: #f7fdfc; 
 }
 
 .DescriptionCont {
@@ -256,8 +256,8 @@ header {
 }
 
 .TitleSeparator h2 {
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-size: 30px;
+  font-weight: 600;
   color: #1e1e1e;
   margin: 0;
 }
@@ -265,7 +265,7 @@ header {
 .TitleSeparator hr {
   flex-grow: 1;
   height: 2px;
-  background-color: #29b5a8; /* color similar al acento de "Solution" en la imagen */
+  background-color: #00A295; 
   border: none;
 }
 
@@ -337,54 +337,61 @@ header {
     width: 100%;
   }
 }
-#Benefits {
+ 
+/* HowWork-Section */
+
+#HowWork {
   background-color: #dff6f5;
   padding: 3rem 1rem;
   text-align: center;
 }
 
-#Benefits h2 {
-  font-size: 2rem;
-  margin-bottom: 2rem;
-  font-weight: bold;
-}
-
-.Benefits-container {
+.HowWork-container {
   display: flex;
   justify-content: center;
   gap: 2rem;
   flex-wrap: wrap;
 }
 
-.Benefit-card {
+.HowWork-card {
   background-color: white;
   padding: 2rem;
   border-radius: 15px;
-  max-width: 300px;
+  max-width: 400px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   text-align: left;
 }
 
-.Benefit-card img {
+.HowWork-img{
+  height: 50%;
   width: 100%;
-  border-radius: 10px;
-  margin-bottom: 1rem;
 }
 
-.Benefit-card h3 {
+.HowWork-card img {
+  width: 100%;
+  height: 100%;
+}
+.HowWork-content{
+  margin-top: 30px;
+  height: 50%;
+  width: 100%;
+}
+
+.HowWork-card h3 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
   color: #333;
+  font-weight: 600;
   text-align: center;
 }
 
-.Benefit-card ol {
+.HowWork-card ol {
   padding-left: 1.2rem;
-  color: #555;
+  color: #2c2c2c;
   font-size: 0.95rem;
 }
 
-.Benefit-card ol li {
+.HowWork-card ol li {
   margin-bottom: 0.75rem;
   line-height: 1.4;
 }
@@ -452,10 +459,6 @@ nav img {
   box-shadow: none;
 }
 
-.contenedorBenefits img {
-  box-shadow: none;
-  width: 5rem;
-}
 
 .faq-section {
   padding: 20px;
@@ -515,7 +518,7 @@ nav img {
   border: none;
 }
 
-.contacto-section {
+.Contact-section {
   background-color: white;
   padding: 4rem 2rem;
   display: flex;
@@ -577,6 +580,7 @@ nav img {
   border-radius: 10px;
   font-family: inherit;
   font-size: 1rem;
+  resize: none;
 }
 
 .Contact-form button {
@@ -607,12 +611,6 @@ nav img {
     width: 100%;
   }
 }
-
-
-
-
-
-
 
 
 footer .vectorImg{
