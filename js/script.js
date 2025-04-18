@@ -73,6 +73,12 @@ const messageContainer = document.querySelector('.karyTalksBox');
 let answerBot = "";
 
 sendButton.addEventListener('click', () => {
+
+  if (messageInput.value === "") {
+    alert("Please write a message before sending.");
+    return;
+  }
+
   /*Build a chat glove for human*/
   const humanGloveCnt = document.createElement('div');
   const humanGlove = document.createElement('div');
@@ -86,18 +92,23 @@ sendButton.addEventListener('click', () => {
   messageContainer.appendChild(humanGloveCnt);
 
   /*Doing the same process with Virtual Assitent*/
+  
+  chatBox(messageInput.value);//call the function to get the answer
+  
   const messageAIBox = document.createElement('div');
   const messageAI = document.createElement('div');
-  const textAI = document.createTextNode("Hello, I am your virtual assistant. How can I help you?");
+  const textAI = document.createTextNode(answerBot);
   const imgAIContainer = document.createElement('div');
   const imgAI = document.createElement('img');
   
+
   imgAI.src = "../img/KaryVA.png";
   imgAI.alt = "Virtual Assistant Picture";
   imgAI.classList.add('imgVA');
   imgAIContainer.classList.add('vaImgProfile');
   messageAI.classList.add('vaMessage');
   messageAIBox.classList.add('karyTalksCont');
+
 
   imgAIContainer.appendChild(imgAI);
   messageAI.appendChild(textAI);
@@ -108,6 +119,53 @@ sendButton.addEventListener('click', () => {
   messageContainer.scrollIntoView({ behavior: 'smooth' });
   messageContainer.style.overflowY = "scroll"; //enable scroll bar
   messageContainer.style.overflowX = "hidden"; //disable scroll bar
+  
   messageInput.value = ""; //clear the input box
+
 })
 
+const chatBox = (sentence) => {
+  let finalAnsw = "";
+
+  if (sentence.includes("hello") || sentence.includes("Hello") || sentence.includes("hi")) {
+    finalAnsw = "Hello! How can I assist you today?";
+  }
+  else if (sentence.includes("company") || sentence.includes("about")) {
+    finalAnsw = "We are a company that specializes in providing innovative ambiental solutions to our clients for their companies or streets";
+  }
+  else if (sentence.includes("services") || sentence.includes("service")) {
+    finalAnsw = "We offer a range of services including environmental consulting, waste management, and sustainability assessments.";
+  }
+  else if (sentence.includes("contact") || sentence.includes("reach")) {
+    finalAnsw = "You contact us with the email: cleanwide@gmail.com"
+  }
+  else if (sentence.includes("location") || sentence.includes("where")) {
+    finalAnsw = "We are located in Lima-Perú";    
+  }
+  else if (sentence.includes("name") || sentence.includes("who")) {
+    finalAnsw = "We are CleanWide, a company dedicated to providing environmental solutions.";
+  }
+  else if (sentence.includes("log in") || sentence.includes("sign in")) {
+    finalAnsw = "You can log in to your account on our website by clicking the 'Sign in' button at the top right corner.";    
+  }
+  else if (sentence.includes("sign up") || sentence.includes("register")) {
+    finalAnsw = "You can sign up for an account on our website by clicking the 'Sign in' button at the top right corner and after that clicking 'Register'.";    
+  }
+  else if (sentence.includes("help") || sentence.includes("support")) {
+    finalAnsw = "If you need help, please contact our support team at conctact section.";
+  }
+  else if (sentence.includes("thank you") || sentence.includes("thanks")) {
+    finalAnsw = "You're welcome! If you have any more questions, feel free to ask.";
+  }
+  else if (sentence.includes("application") || sentence.includes("app")) {
+    finalAnsw = "Our application is designed to help you manage the waste in your environment, so you can dispose of it or recycle it. You can download it from our website.";
+  }
+  else if (sentence.includes("features") || sentence.includes("functionality")) {
+    finalAnsw = "Our application offers features such as waste tracking, recycling reminders, and tips for reducing your environmental impact.";
+  }
+  else {
+    finalAnsw = "I'm sorry, I didn't understand that. I can answer you just about company things. like services, location, contact, etc.";
+  }
+
+  answerBot = finalAnsw;
+}
