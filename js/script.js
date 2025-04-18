@@ -45,3 +45,14 @@ function toggleAnswer(faq) {
   const answer = faq.querySelector('.faq-answer');
   answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
 }
+
+/////////////////////////////
+
+const messageBoxMask = document.querySelector('.maskAi');
+const messageAIBox = document.querySelector('.messageBoxCont');
+const callAIBox = document.querySelector('.VAIconBox');
+
+callAIBox.addEventListener('click', () => {
+  messageAIBox.classList.toggle('translateBox');
+  messageBoxMask.classList.toggle('visible');
+});

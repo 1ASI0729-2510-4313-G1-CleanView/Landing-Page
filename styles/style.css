@@ -735,3 +735,195 @@ footer .vectorImg{
     margin: 15px;
   }
 }
+
+
+.VirtualAssistantBox{
+  position: fixed;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 5%;
+  height: 8%; 
+  margin-top: -5.5%;
+  z-index: 100000;
+  
+  right: 2%;
+  bottom: 4%;
+}
+
+.VirtualAssistantBox .VAIconBox{
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #89E0B0;
+  height: 100%;
+  width: 80%;
+  border-radius: 92% 95%;
+  i{
+    font-size: 130%;
+  }
+}
+
+.VirtualAssistantBox .VAIconBox:hover{
+  background-color: #9cf1c1;
+}
+
+.VirtualAssistantBox .VAIconBox::after{
+  content: '';
+  position: absolute;
+  width: 25%;
+  height: 30%;
+  background-color: #399431;
+  border-radius: 92% 95%;
+  bottom: 3%;
+  right: 7%;
+}
+
+/*Code for page background turns transparent black and 
+the messaje box appers from the rigth to left*/
+
+.VirtualAssistantBox .messageBox{
+  position: fixed;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1000;
+
+  transition: top 0.3s;
+
+  .messageBoxCont{
+    position: fixed;
+    border-radius: 20px;
+    top: 100%;
+    width: 47%;
+    height: 75%;
+    right: 4%;
+    bottom: 8%;
+    background-color: #00A295;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    box-shadow: 0 0 22px 5px rgba(0, 0, 0, 0.5);
+    
+    transition: top 0.3s;
+    z-index: -1000;
+  }
+}
+
+.maskAi{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00000038;
+  z-index: -5000;
+}
+
+.VirtualAssistantBox .messageBox .messageBoxCont .mbc{
+  display: flex;
+  flex-direction: row ;
+  width: 100%;
+  height: 12%;
+  padding: 2px;
+}
+
+.VirtualAssistantBox .messageBox .messageBoxCont .mbc:nth-child(2){
+  height: 75%;
+}
+
+.VirtualAssistantBox .messageBox .messageBoxCont .BHeader{
+  text-align: start;
+  background-color: var(--principal);
+  border-radius: 12px 12px 0 0;
+  h2{
+    position: relative;
+    top: 15%;
+    left: 4%;
+  }
+}
+
+.VirtualAssistantBox .messageBox .messageBoxCont .BFooter{
+  box-shadow: 0px -5px 10px 0px rgba(0, 0, 0, 0.1);
+  padding: 5px;
+  left: 2%;
+  input{
+    position: relative;
+    left: 2%;
+    background-color: transparent;
+    color: #050505;
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    resize: none;
+    width: 85%;
+  }
+  input:focus{
+    border: none;
+    outline: none;
+  }
+  input::placeholder{
+    color: #505050b7;
+    font-size: 105%;
+  }
+  i{
+    position: absolute;
+    right: 8%;
+    margin-top: 2%;
+    font-size: 120%;
+    cursor: pointer;
+  }
+}
+
+.VirtualAssistantBox .animated_line{
+  position: absolute;
+  height: 2px;
+  bottom: 2%;
+  background: #4a4b4b63;
+  width: 81%;
+  left: 4%;
+}
+
+.VirtualAssistantBox .animated_line:before,
+.VirtualAssistantBox .animated_line:after {
+  content: '';
+  height: 2px;
+  width: 0;
+  bottom: 2%;
+  position: absolute;
+  background: #232424;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+.VirtualAssistantBox .animated_line:before {
+  left: 50%;
+}
+
+.VirtualAssistantBox .animated_line:after {
+  right: 50%;
+}
+
+.VirtualAssistantBox input:focus ~ 
+.animated_line:before,
+.VirtualAssistantBox input:focus ~ 
+.animated_line:after {
+  width: 50%;
+}
+
+.KaryTalksBox{
+  width: 100%;
+  height: 100%;
+}
+
+.translateBox{
+  display: block;
+  top: 18%!important;
+}
+
+.visible{
+  display: block;
+}
