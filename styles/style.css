@@ -134,7 +134,7 @@ header {
   padding: 1rem;
   background-image: url('../img/banner1.png'); /* ← nota el `../` para subir un nivel */
   background-size: cover;
-  height: 30rem;
+  height: 33pc;
   background-color: rgba(0, 0, 0, 0.66);
   background-blend-mode: lighten;
 }
@@ -142,7 +142,8 @@ header {
 
 
 #Banner #Slogan {
-  width: 100%; 
+  width: 100%;
+  margin-top: 50px; 
   max-width: 600px;
   text-align: center; /* ← centrado */
   margin-bottom: 1rem;
@@ -777,6 +778,67 @@ footer .vectorImg{
 }
 
 
+
+@media (max-width: 768px) {
+  footer .vectorImg{
+    margin-top: 20px;
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+  }
+  
+  .FooterCont .cnt{
+    margin: 5px;
+    margin-top: 90px;
+    width: 38%;
+    height: 65%;
+  }
+  
+  .FooterCont .TermsAndCond{ 
+    font-size: 70%;
+  }
+  
+  .FooterCont .TextCtn{
+    .StartUp p{
+      font-size: 1.5pc;
+      font-weight: 550;
+      margin-bottom: 10px;
+    }
+    .AccessNetw{
+      font-size: 0.8pc;
+    }
+  }
+
+  .FooterCont ul li:nth-child(2){
+    left: 10px;
+  }
+
+  .FooterCont ul li {
+    .fa-brands{
+      font-size: 1.8rem;
+    }
+  }
+  
+  .FooterCont .CopyRightCont {
+      font-size: 8px;
+  }
+  
+  .FooterCont .AdrressCont {
+    font-size: 10px;
+    margin-top: -20px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
 .VirtualAssistantBox{
   position: fixed;
   text-align: center;
@@ -971,11 +1033,9 @@ the messaje box appers from the rigth to left*/
 
 .VirtualAssistantBox .karyTalksBox .karyTalksCont{
   display: flex;
-  height: 16%;
 
   div{
     width: 10%;
-    height: 100%;
   }
   .vaMessage{
     margin-left: 2%;
@@ -984,21 +1044,13 @@ the messaje box appers from the rigth to left*/
     flex-direction: column;
     justify-content: center;
     text-align: start;
+    padding: 2px;
   }
 }
 
-.VirtualAssistantBox .karyTalksBox .vaMessage{
-  margin-left: 2%;
-  width: 70%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: start;
-}
-
 .VirtualAssistantBox .karyTalksBox .karyTalksCont .vaImgProfile .imgVA{
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 2.5pc;
   border-radius: 50% 100%;
 }
 
@@ -1033,4 +1085,21 @@ the messaje box appers from the rigth to left*/
   width: 8px;
   background-color: transparent;
   border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .VirtualAssistantBox{
+    width: 4pc;
+    height: 8%; 
+  }
+
+  .VirtualAssistantBox .VAIconBox{
+    height: 100%;
+    width: 80%;
+  }
+
+  .VirtualAssistantBox .messageBox .messageBoxCont{
+    top: 100%;
+    width: 92%;
+  }
 }
