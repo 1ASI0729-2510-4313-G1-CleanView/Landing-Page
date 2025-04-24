@@ -129,7 +129,7 @@ sendButton.addEventListener('click', () => {
   const imgAI = document.createElement('img');
   
 
-  imgAI.src = "../img/KaryVA.png";
+  imgAI.src = "img/KaryVA.png";
   imgAI.alt = "Virtual Assistant Picture";
   imgAI.classList.add('imgVA');
   imgAIContainer.classList.add('vaImgProfile');
