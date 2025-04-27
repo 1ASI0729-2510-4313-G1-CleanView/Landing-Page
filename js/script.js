@@ -72,6 +72,9 @@ function toggleAnswer(faq) {
 })();
 
 
+//NavBar Logic
+
+
 
 /////////////////////////////
 
