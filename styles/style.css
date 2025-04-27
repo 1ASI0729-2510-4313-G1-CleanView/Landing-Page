@@ -423,28 +423,108 @@ header {
   height: 40px;
 }
 
-/* About-us Section */
-#AboutUs {
-  padding: 3rem;
-  margin: auto;
-  max-width: 80rem;
-}
+/*About US*/
 
-#nosotrosHorizon {
-  padding: 1rem;
-}
-
-.AboutUs_text {
-  max-width: 35rem;
-}
-
-#AboutUs_ {
+.about-us{
+  padding: 20px;
+  width: 100%;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  gap: 4rem;
-  flex-wrap: wrap;
+  flex-direction: row ;
+  justify-content: center;
+
+  .imgPlanetContainer{
+      img{
+          margin-top: 50px;
+      }
+  }
 }
+
+.about-us .about-us-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+}
+
+.about-us .about-us-container .flxCnt{
+  
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 30px 0;
+  box-shadow: inset 0 0 22px 5px rgba(7, 7, 7, 0.151);
+
+  .element{
+      margin: 0 20px;
+  } 
+
+  p{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      width: 50%;
+  }
+
+  img{
+      width: 15pc;
+      border-radius: 20px;
+  }
+}
+
+.about-us .about-us-container .vision{
+  flex-direction: row-reverse;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .about-us .about-us-container{
+    width: 90%;
+
+    .flxCnt{
+        flex-direction: column;
+        align-items: center;
+
+        p{
+            width: 100%;
+        }
+        .element{
+            margin: 0 0 20px 0;
+        }
+    }
+  } 
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #throw {
   height: 15rem;
