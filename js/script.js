@@ -100,7 +100,42 @@ const messageInput = document.querySelector('.txtWriter');
 const sendButton = document.querySelector('.sendButton');
 const messageContainer = document.querySelector('.karyTalksBox');
 
+const messageValue = document.querySelectorAll('.fm-bx-value')
+const frequencyMsgBox = document.querySelector('.frecuency-message-box')
+
 let answerBot = "";
+
+let messageClick = "";
+
+let interMsgFrc = 0;
+
+/* scroll chat behaviour */
+let scrollBtm = () => {
+  messageContainer.scrollTop = messageContainer.scrollHeight
+}
+
+messageContainer.addEventListener("scroll", function(){
+  const isAtBottom = messageContainer.scrollTop + messageContainer.clientHeight >= messageContainer.scrollHeight - 1;
+  frequencyMsgBox.classList.toggle("invisible", !isAtBottom);
+})
+
+/*Frequency message query*/
+for (let i = 0; i < messageValue.length; i++) {
+  messageValue[i].addEventListener("click", () =>{
+    interMsgFrc++;
+    messageClick = messageValue[i].innerHTML
+   
+    createChat(messageClick)
+    scrollBtm()
+
+    if (interMsgFrc) {
+      frequencyMsgBox.classList.remove('frecuency-message-box')
+      frequencyMsgBox.classList.add('frecuency-message-box-hidden')
+    }
+  })
+
+}
+
 
 sendButton.addEventListener('click', () => {
 
@@ -109,10 +144,22 @@ sendButton.addEventListener('click', () => {
     return;
   }
 
+  createChat(messageInput.value)
+
+  scrollBtm()
+
+  frequencyMsgBox.classList.remove('frecuency-message-box')
+  frequencyMsgBox.classList.add('frecuency-message-box-hidden')
+ 
+  messageInput.value = ""; //clear the input box
+
+})
+
+let createChat = (mssg) => {
   /*Build a chat glove for human*/
   const humanGloveCnt = document.createElement('div');
   const humanGlove = document.createElement('div');
-  const textGlove = document.createTextNode(messageInput.value);
+  const textGlove = document.createTextNode(mssg);
   /*add classes for each div*/
   humanGlove.classList.add('humanMessage');
   humanGloveCnt.classList.add('humanTalksCont');
@@ -123,7 +170,7 @@ sendButton.addEventListener('click', () => {
 
   /*Doing the same process with Virtual Assitent*/
   
-  chatBox(messageInput.value);//call the function to get the answer
+  chatBox(mssg);//call the function to get the answer
   
   const messageAIBox = document.createElement('div');
   const messageAI = document.createElement('div');
@@ -150,26 +197,26 @@ sendButton.addEventListener('click', () => {
   messageContainer.style.overflowY = "scroll"; //enable scroll bar
   messageContainer.style.overflowX = "hidden"; //disable scroll bar
   
-  messageInput.value = ""; //clear the input box
-
-})
+}
 
 const chatBox = (sentence) => {
   let finalAnsw = "";
 
+  sentence = sentence.trim();
+
   if (sentence.includes("hello") || sentence.includes("Hello") || sentence.includes("hi")) {
     finalAnsw = "Hello! How can I assist you today?";
   }
-  else if (sentence.includes("company") || sentence.includes("about")) {
-    finalAnsw = "We are a company that specializes in providing innovative ambiental solutions to our clients for their companies or streets";
+  else if (sentence == "What is the company's specialization?") {
+      finalAnsw = "We are a company that specializes in providing innovative ambiental solutions to our clients for their companies or streets";
   }
-  else if (sentence.includes("services") || sentence.includes("service")) {
+  else if (sentence == "What the services of the app?") {
     finalAnsw = "We offer a range of services including environmental consulting, waste management, and sustainability assessments.";
   }
-  else if (sentence.includes("contact") || sentence.includes("reach")) {
+  else if (sentence == "How i can contact the company?") {
     finalAnsw = "You contact us with the email: cleanwide@gmail.com"
   }
-  else if (sentence.includes("location") || sentence.includes("where")) {
+  else if (sentence == "Where is the company's location?") {
     finalAnsw = "We are located in Lima-Perú";    
   }
   else if (sentence.includes("name") || sentence.includes("who")) {
@@ -187,10 +234,10 @@ const chatBox = (sentence) => {
   else if (sentence.includes("thank you") || sentence.includes("thanks")) {
     finalAnsw = "You're welcome! If you have any more questions, feel free to ask.";
   }
-  else if (sentence.includes("application") || sentence.includes("app")) {
+  else if (sentence == "How i can to manage and recycle my waste?") {
     finalAnsw = "Our application is designed to help you manage the waste in your environment, so you can dispose of it or recycle it. You can download it from our website.";
   }
-  else if (sentence.includes("features") || sentence.includes("functionality")) {
+  else if (sentence == "Whats is the funtionality of your app?") {
     finalAnsw = "Our application offers features such as waste tracking, recycling reminders, and tips for reducing your environmental impact.";
   }
   else {

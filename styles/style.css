@@ -354,7 +354,12 @@ header {
     width: 100%;
   }
 }
- 
+
+
+
+
+
+
 /* HowWork-Section */
 
 #HowWork {
@@ -384,6 +389,7 @@ header {
   max-width: 400px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   text-align: left;
+
 }
 
 .HowWork-img{
@@ -419,9 +425,8 @@ header {
   line-height: 1.4;
 }
 
-.HowWork-card button {
-  height: 40px;
-}
+
+
 
 /*About US*/
 
@@ -482,6 +487,11 @@ header {
 
 
 @media (max-width: 768px) {
+
+  .HowWork-card {
+    padding: 20px 10px;
+  }
+
   .about-us .about-us-container{
     width: 90%;
 
@@ -986,7 +996,7 @@ the messaje box appers from the rigth to left*/
   .messageBoxCont{
     position: fixed;
     border-radius: 20px;
-    top: 100%;
+    top: 100%; /*100*/
     width: 47%;
     height: 75%;
     right: 4%;
@@ -1029,11 +1039,13 @@ the messaje box appers from the rigth to left*/
   text-align: start;
   background-color: var(--principal);
   border-radius: 12px 12px 0 0;
+
   h2{
     position: relative;
     top: 15%;
     left: 4%;
   }
+
   i{
     position: absolute;
     right: 5%;
@@ -1047,6 +1059,7 @@ the messaje box appers from the rigth to left*/
   box-shadow: 0px -5px 10px 0px rgba(0, 0, 0, 0.1);
   padding: 5px;
   left: 2%;
+  
   input{
     position: relative;
     left: 2%;
@@ -1058,14 +1071,17 @@ the messaje box appers from the rigth to left*/
     resize: none;
     width: 85%;
   }
+
   input:focus{
     border: none;
     outline: none;
   }
+  
   input::placeholder{
     color: #505050b7;
     font-size: 105%;
   }
+
   i{
     position: absolute;
     right: 8%;
@@ -1116,16 +1132,18 @@ the messaje box appers from the rigth to left*/
   width: 100%;
   height: 100%;
   padding: 15px;
+
 } 
 
 /*creation of the gloves of text between bot and human*/
 
 .VirtualAssistantBox .karyTalksBox .karyTalksCont{
   display: flex;
-
+  margin: 20px 0;  
   div{
     width: 10%;
   }
+
   .vaMessage{
     margin-left: 2%;
     width: 70%;
@@ -1175,6 +1193,72 @@ the messaje box appers from the rigth to left*/
   background-color: transparent;
   border-radius: 10px;
 }
+
+
+
+.VirtualAssistantBox .frecuency-message-box{
+  display: flex;
+  position: absolute;
+  font-size: 10px;
+  justify-content: end;
+
+  .frecuency-message-ctn{
+      width: 88%;
+      flex-wrap: wrap;
+
+      div{
+          margin: 5px 20px;
+          padding: 5px;
+          width: 13rem;
+      }
+  }
+}
+
+.VirtualAssistantBox .frecuency-message-ctn{
+  display: flex;
+
+  div{
+      background: #143479;
+      color: #fff;
+      border-radius: 20px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      cursor: pointer;
+  }
+}
+
+.VirtualAssistantBox .frecuency-message-box-hidden{
+  display: flex;
+  position: absolute;
+  margin-bottom: 3.5rem;
+  bottom: 0;
+  left: 0;
+  font-size: 10px;
+  width: 100%;
+  overflow-x: scroll;
+  
+  
+  .frecuency-message-ctn div{
+      margin: 0 10px;
+      padding: 2px;
+      width: 15rem;
+  }
+}
+
+
+.VirtualAssistantBox 
+.frecuency-message-box-hidden::-webkit-scrollbar {
+    height: 5px;
+}
+
+.VirtualAssistantBox 
+.frecuency-message-box-hidden::-webkit-scrollbar-thumb {
+    background-color: #4d4c4c85;
+    border-radius: 20px;
+}
+
+
 
 @media (max-width: 768px) {
   .VirtualAssistantBox{
