@@ -125,6 +125,68 @@ header {
   text-align: center;
 }
 
+
+
+.language-switcher i{
+    cursor: pointer;
+}
+
+.languageBox{
+    background-color: var(--principal);
+    border: #000 1px solid;
+    position: fixed;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 5rem;
+    align-items: center;
+    border-radius: 5px;
+    top: -100%;
+
+    span{
+        margin: 10px 0;
+        cursor: pointer;
+    }
+}
+
+.languageBox .line-spare::after {
+    content: "";
+    width: 50%;
+    height: 1px;
+    position: absolute;
+    left: 50%;
+    margin-top: -11px;
+    background-color: #000;
+}
+
+.languageBox .line-spare::before {
+    content: "";
+    width: 50%;
+    height: 1px;
+    position: absolute;
+    left: 0%;
+    margin-top: 35px;
+    background-color: #000;
+}
+
+
+.languageBoxBack{
+    top: 8%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #Banner {
   display: flex;
   flex-wrap: wrap; 

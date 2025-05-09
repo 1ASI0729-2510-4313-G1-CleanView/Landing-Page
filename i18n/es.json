@@ -1,0 +1,76 @@
+{
+  "nav-bar": {
+    "solution": "Soluciones",
+    "how-works": "¿Cómo funciona?",
+    "about-us": "Sobre nosotros",
+    "contact": "Contacto",
+    "faqs": "FAQs"
+  },
+  "web-title": {
+    "principal": "Gestiona tus residuos inteligentemente con CleanWind"
+  },
+  "summary": {
+    "title": "Una solución digital para transformar la gestión de residuos",
+    "text": "CleanWind permite a las empresas monitorear y optimizar su producción de residuos, y a los ciudadanos identificar cómo, cuándo y dónde reciclar, ganando recompensas por sus acciones sostenibles."
+  },
+  "first-section-company": {
+    "title": "Para Empresas",
+    "text": "Reduce tus tiempos operativos y mejora tu cumplimiento ambiental con reportes automatizados y conectividad con centros de reciclaje.",
+    "card-one": "Control y registro automatizado de residuos",
+    "card-two": "Coordinación con recicladores",
+    "card-three": "Reportes ambientales para regulaciones"
+  },
+  "first-section-natuser": {
+    "title": "Para Usuario",
+    "text": "Recicla desde casa, gana puntos y cámbialos por recompensas. La app te guía sobre qué, cómo y dónde reciclar.",
+    "card-one": "Mapa de puntos de reciclaje cercanos",
+    "card-two": "Consejos personalizados",
+    "card-three": "Acumulación de puntos por reciclar"
+  },
+  "card-company-section": {
+    "title": "Empresa",
+    "item-list-one": "Regístrate y crea tu perfil ambiental",
+    "item-list-two": "Conecta tus fuentes de residuos",
+    "item-list-three": "Recibe sugerencias y alertas de volumen",
+    "item-list-four": "Descarga reportes o coordina recolecciones",
+    "button": "Únete como Empresa"
+  },
+  "card-natuser-section": {
+    "title": "Usuario",
+    "item-list-one": "Descarga la app y crea tu cuenta",
+    "item-list-two": "Encuentra lugares cercanos de reciclaje",
+    "item-list-three": "Lleva tus residuos o programa una recolección",
+    "item-list-four": "Gana puntos y recibe recomendaciones",
+    "button": "Únete como Usuario"
+  },
+  "mission": {
+    "title": "Misión",
+    "text": "Contribuir al desarrollo de un entorno más sostenible proporcionando a empresas y ciudadanos herramientas digitales para monitorear, reducir y gestionar eficientemente sus residuos."
+  },
+  "vision": {
+    "title": "Visión",
+    "text": "Contribuir al desarrollo de un entorno más sostenible proporcionando a empresas y ciudadanos herramientas digitales para monitorear, reducir y gestionar eficientemente sus residuos."
+  },
+  "faqs-section": {
+    "question-one-title": "¿Qué es CleanWide?",
+    "question-one-text": "CleanWide es una plataforma web para la gestión eficiente de residuos, dirigida tanto a individuos como a empresas. Permite a los usuarios monitorear y coordinar recolecciones, generar reportes y recibir recomendaciones personalizadas para fomentar prácticas sostenibles. Cada segmento (individuos y empresas) tiene funciones adaptadas a sus necesidades.",
+    "question-two-title": "¿Cómo puedo contribuir a la sostenibilidad a través de esta plataforma?",
+    "question-two-text": "A través de la plataforma puedes recibir recomendaciones personalizadas sobre cómo reducir residuos y mejorar tus prácticas de reciclaje. Además, el sistema gamificado y el seguimiento de logros sostenibles te motivarán a implementar acciones más responsables como reducir, reutilizar y reciclar.",
+    "question-three-title": "¿Puedo acceder a reportes detallados sobre la gestión de residuos?",
+    "question-three-text": "Sí, la plataforma ofrece reportes detallados sobre la cantidad de residuos generados, clasificados por tipo y periodo. Estos reportes permiten un monitoreo eficiente y una toma de decisiones informada para optimizar la gestión de residuos.",
+    "question-four-title": "¿Existen opciones de automatización para la recolección de residuos?",
+    "question-four-text": "Sí, CleanWide ofrece a las empresas la posibilidad de automatizar la recolección de residuos mediante la integración de servicios de recolección automatizada. Esto facilita la programación y gestión eficiente de las tareas sin intervención manual constante."
+  },
+  "contact-section": {
+    "name-placeholder": "Nombre",
+    "phone-placeholder": "Teléfono",
+    "email-placeholder": "Correo electrónico",
+    "message-placeholder": "Mensaje",
+    "button": "Enviar"
+  },
+  "footer": {
+    "terms-use": "Términos de uso",
+    "privacy-policy": "Política de privacidad",
+    "text": "Accede a nuestras redes"
+  }
+}

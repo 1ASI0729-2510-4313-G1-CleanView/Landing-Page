@@ -1,0 +1,76 @@
+{
+    "nav-bar": {
+        "solution": "Solutions",
+        "how-works": "How it Works?",
+        "about-us": "About Us",
+        "contact": "Contact",
+        "faqs": "FAQs"
+    },
+    "web-title": {
+        "principal": "Manage your waste intelligently with CleanWind"
+    },
+    "summary": {
+        "title": "A digital Solution to transform wate management",
+        "text": "CleanWind enables businesses to monitor and optimize their waste production, and citizens to identify how, when and where to recycle, earning rewards for their sustainable actions."
+    },
+    "first-section-company": {
+        "title": "For Companies",
+        "text": "Reduce your operating times and improve your environmental compliance with automated reporting and connectivity to recycling centers.",
+        "card-one": "Automated waste control and registration",
+        "card-two": "Coordination with recyclers",
+        "card-three": "Environmental reports for regulations"
+    },
+    "first-section-natuser": {
+        "title": "For user",
+        "text": "Recycle from home, earn points, and redeem them for rewards. The app guies yu on what, how an where to recycle",
+        "card-one": "Map of nearby recycling points",
+        "card-two": "Personalized Tips",
+        "card-three": "Accumulation of points for recycling"
+    },
+    "card-company-section":{
+        "title": "Company",
+        "item-list-one": "Register and create your environmental profile",
+        "item-list-two": "Connect your waste sources",
+        "item-list-three": "Receive suggestions and volume alerts",
+        "item-list-four": "Download reports or coordinate collections",
+        "button": "Join as a Company"
+    },
+    "card-natuser-section":{
+        "title": "User",
+        "item-list-one": "Download the app and create your account",
+        "item-list-two": "Find nearby recycling locations",
+        "item-list-three": "Take your waste or schedule a pickup",
+        "item-list-four": "Earn points and receive recommendations",
+        "button": "Join as a User"
+    },
+    "mission": {
+        "title": "Mission",
+        "text": "contribute to the development of a more sustainable environment by providing businesses and citizens with digital tools to efficiently monitor, reduce, and manage their waste."
+    },
+    "vision":{
+        "title": "Vision",
+        "text": "contribute to the development of a more sustainable environment by providing businesses and citizens with digital tools to efficiently monitor, reduce, and manage their waste."
+    },
+    "faqs-section": {
+        "question-one-title" : "What is CleanWide?",
+        "question-one-text" : "CleanWide is a web-based platform for efficient waste management, aimed at both individuals and businesses. It allows users to monitor and coordinate collections, generate reports, and receive personalized recommendations to promote sustainable practices. Each segment (individuals and businesses) has features tailored to their needs.",
+        "question-two-title" : "How can I contribute to sustainability through this platform?",
+        "question-two-text" : "Through the platform, you can receive personalized recommendations on how to reduce waste and improve your recycling practices. Additionally, the gamified system and tracking of sustainable achievements will encourage you to implement more responsible actions, such as reducing, reusing, and recycling.",
+        "question-three-title" : "Can I access detailed reports on waste management?",
+        "question-three-text" : "Yes, the platform offers detailed reports on the amount of waste generated, classified by type and period. These reports allow for efficient monitoring and informed decision-making to optimize waste management.",
+        "question-four-title" : "Are there automation options for waste collection?",
+        "question-four-text" : "Yes, CleanWide offers businesses the ability to automate waste collection by integrating automated collection services. This makes it easy to schedule and efficiently manage collection tasks without constant manual intervention."
+    },
+    "contact-section":{
+        "name-placeholder": "Name",
+        "phone-placeholder": "Phone",
+        "email-placeholder": "Email",
+        "message-placeholder": "Message",
+        "button": "Submit"
+    },
+    "footer":{
+        "terms-use": "Terms of Use",
+        "privacy-policy": "Privacy Policy",
+        "text": "Access our networks"
+    }
+}

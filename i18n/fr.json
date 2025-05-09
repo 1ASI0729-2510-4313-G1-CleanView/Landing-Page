@@ -1,0 +1,76 @@
+{
+  "nav-bar": {
+    "solution": "Solutions",
+    "how-works": "Comment ça marche ?",
+    "about-us": "À propos de nous",
+    "contact": "Contact",
+    "faqs": "FAQ"
+  },
+  "web-title": {
+    "principal": "Gérez vos déchets intelligemment avec CleanWind"
+  },
+  "summary": {
+    "title": "Una solución digital para transformar la gestión de residuos",
+    "text": "CleanWind permite a las empresas monitorear y optimizar su producción de residuos, y a los ciudadanos identificar cómo, cuándo y dónde reciclar, ganando recompensas por sus acciones sostenibles."
+  }, 
+  "first-section-company": {
+    "title": "Pour les entreprises",
+    "text": "Réduisez vos délais opérationnels et améliorez votre conformité environnementale grâce à des rapports automatisés et une connectivité avec les centres de recyclage.",
+    "card-one": "Contrôle et enregistrement automatisés des déchets",
+    "card-two": "Coordination avec les recycleurs",
+    "card-three": "Rapports environnementaux pour la réglementation"
+  },
+  "first-section-natuser": {
+    "title": "Pour les utilisateurs",
+    "text": "Recyclez depuis chez vous, gagnez des points et échangez-les contre des récompenses. L'application vous guide sur quoi, comment et où recycler.",
+    "card-one": "Carte des points de recyclage à proximité",
+    "card-two": "Conseils personnalisés",
+    "card-three": "Accumulation de points pour le recyclage"
+  },
+  "card-company-section": {
+    "title": "Entreprise",
+    "item-list-one": "Inscrivez-vous et créez votre profil environnemental",
+    "item-list-two": "Connectez vos sources de déchets",
+    "item-list-three": "Recevez des suggestions et des alertes de volume",
+    "item-list-four": "Téléchargez des rapports ou coordonnez des collectes",
+    "button": "Rejoindre en tant qu’entreprise"
+  },
+  "card-natuser-section": {
+    "title": "Utilisateur",
+    "item-list-one": "Téléchargez l'application et créez votre compte",
+    "item-list-two": "Trouvez des lieux de recyclage à proximité",
+    "item-list-three": "Apportez vos déchets ou programmez une collecte",
+    "item-list-four": "Gagnez des points et recevez des recommandations",
+    "button": "Rejoindre en tant qu’utilisateur"
+  },
+  "mission": {
+    "title": "Mission",
+    "text": "Contribuer au développement d’un environnement plus durable en fournissant aux entreprises et aux citoyens des outils numériques pour surveiller, réduire et gérer efficacement leurs déchets."
+  },
+  "vision": {
+    "title": "Vision",
+    "text": "Contribuer au développement d’un environnement plus durable en fournissant aux entreprises et aux citoyens des outils numériques pour surveiller, réduire et gérer efficacement leurs déchets."
+  },
+  "faqs-section": {
+    "question-one-title": "Qu'est-ce que CleanWide ?",
+    "question-one-text": "CleanWide est une plateforme web pour une gestion efficace des déchets, destinée aux particuliers et aux entreprises. Elle permet de suivre et coordonner les collectes, de générer des rapports et de recevoir des recommandations personnalisées pour favoriser des pratiques durables. Chaque segment (particuliers et entreprises) dispose de fonctionnalités adaptées à ses besoins.",
+    "question-two-title": "Comment puis-je contribuer à la durabilité grâce à cette plateforme ?",
+    "question-two-text": "Grâce à la plateforme, vous pouvez recevoir des recommandations personnalisées pour réduire vos déchets et améliorer vos pratiques de recyclage. De plus, le système ludique et le suivi des actions durables vous encourageront à adopter des comportements plus responsables comme réduire, réutiliser et recycler.",
+    "question-three-title": "Puis-je accéder à des rapports détaillés sur la gestion des déchets ?",
+    "question-three-text": "Oui, la plateforme propose des rapports détaillés sur la quantité de déchets générés, classés par type et période. Ces rapports permettent un suivi efficace et une prise de décision éclairée pour optimiser la gestion des déchets.",
+    "question-four-title": "Existe-t-il des options d'automatisation pour la collecte des déchets ?",
+    "question-four-text": "Oui, CleanWide permet aux entreprises d'automatiser la collecte des déchets en intégrant des services de collecte automatisés. Cela facilite la planification et la gestion efficace des tâches sans intervention manuelle constante."
+  },
+  "contact-section": {
+    "name-placeholder": "Nom",
+    "phone-placeholder": "Téléphone",
+    "email-placeholder": "E-mail",
+    "message-placeholder": "Message",
+    "button": "Envoyer"
+  },
+  "footer": {
+    "terms-use": "Conditions d'utilisation",
+    "privacy-policy": "Politique de confidentialité",
+    "text": "Accédez à nos réseaux"
+  }
+}

@@ -21,22 +21,33 @@
 <body>
   <nav>
     <ul class="sidebar">
-      <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
-      <li><a href="#GeneralDescription" class="nav-link">Solutions</a></li>
-      <li><a href="#Benefits" class="nav-link">How Work?</a></li>
-      <li><a href="#AboutUs" class="nav-link">About Us</a></li>
-      <li><a href="#Contact" class="nav-link">Contact</a></li>
-      <li><a href="#faqs" class="nav-link">FAQs</a></li>
+      <li><a href="#GeneralDescription" class="nav-link"  data-section="nav-bar" data-value="solution">Solutions</a></li>
+      <li><a href="#Benefits" class="nav-link" data-section="nav-bar" data-value="how-works">How Work?</a></li>
+      <li><a href="#AboutUs" class="nav-link" data-section="nav-bar" data-value="about-us">About Us</a></li>
+      <li><a href="#Contact" class="nav-link" data-section="nav-bar" data-value="contact">Contact</a></li>
+      <li><a href="#faqs" class="nav-link" data-section="nav-bar" data-value="faqs">FAQs</a></li>
       <li><a href="#">Sign in</a></li>
     </ul>
     <img src="img/TelaSecureLogo.png">
     <ul>
       <li><a href="index.html">CleanView</a></li>
-      <li class="hideOnMobile"><a href="#GeneralDescription" class="nav-link">Solutions</a></li>
-      <li class="hideOnMobile"><a href="#HowWork" class="nav-link">¿How it Works?</a></li>
-      <li class="hideOnMobile"><a href="#AboutUs" class="nav-link">About Us</a></li>
-      <li class="hideOnMobile"><a href="#Contact" class="nav-link">Contact</a></li>
-      <li class="hideOnMobile"><a href="#faqs" class="nav-link">FAQs</a></li>
+      <li>
+        <a class="language-switcher">
+            <span class="changeLang">EN</span> 
+            &nbsp;
+            <i class="fa-solid fa-angle-down arrow-language"></i>
+        </a>
+        <div class="languageBox">
+            <span data-language="en" class="lng-initial">EN</span>
+            <span data-language="es" class="line-spare lng-initial">ES</span>
+            <span data-language="fr" class="lng-initial">FR</span>
+        </div>
+      </li>
+      <li class="hideOnMobile"><a href="#GeneralDescription" class="nav-link" data-section="nav-bar" data-value="solution">Solutions</a></li>
+      <li class="hideOnMobile"><a href="#HowWork" class="nav-link" data-section="nav-bar" data-value="how-works">How it Works?</a></li>
+      <li class="hideOnMobile"><a href="#AboutUs" class="nav-link" data-section="nav-bar" data-value="about-us">About Us</a></li>
+      <li class="hideOnMobile"><a href="#Contact" class="nav-link" data-section="nav-bar" data-value="contact">Contact</a></li>
+      <li class="hideOnMobile"><a href="#faqs" class="nav-link" data-section="nav-bar" data-value="faqs">FAQs</a></li>
       
 
       <li class="hideOnMobile"><a href="">Sign in</a></li>
@@ -46,7 +57,7 @@
   <header>
     <section id="Banner">
       <div id="Slogan">
-        <h1><b>Manage your waste intelligently with CleanWind <span class="highlight"></span></b></h1>
+        <h1><b data-section="web-title" data-value="principal">Manage your waste intelligently with CleanWind <span class="highlight"></span></b></h1>
         <br>
       </div>
     </section>
@@ -58,26 +69,26 @@
     <div class="DescriptionCont">
         <img src="img/descripcion1.png" class="ReferenceImg">
         <div class="Points">
-            <h3>A digital Solution to transform wate management</h3>
-            <p>CleanWind enables businesses to monitor and optimize their waste production, and citizens to identify how, when and where to recycle, earning rewards for their sustainable actions.</p>
+            <h3 data-section="summary" data-value="title">A digital Solution to transform wate management</h3>
+            <p data-section="summary" data-value="text">CleanWind enables businesses to monitor and optimize their waste production, and citizens to identify how, when and where to recycle, earning rewards for their sustainable actions.</p>
         </div>
     </div>
 
   
     <div class="TitleSeparator">
       <hr>
-      <h2>Solutions</h2>
+      <h2 data-section="nav-bar" data-value="solution">Solutions</h2>
       <hr>
     </div>
 
     <div class="DescriptionCont">
         <div class="Points">
-            <h3>For Companies</h3>
-            <p>Reduce your operating times and improve your environmental compliance with automated reporting and connectivity to recycling centers.</p>
+            <h3 data-section="first-section-company" data-value="title">For Companies</h3>
+            <p data-section="first-section-company" data-value="text">Reduce your operating times and improve your environmental compliance with automated reporting and connectivity to recycling centers.</p>
             <div class="Table-info">
-              <div class="Table">Automated waste control and registration</div>
-              <div class="Table">Coordination with recyclers</div>
-              <div class="Table">Environmental reports for regulations</div>
+              <div class="Table" data-section="first-section-company" data-value="card-one">Automated waste control and registration</div>
+              <div class="Table" data-section="first-section-company" data-value="card-two">Coordination with recyclers</div>
+              <div class="Table" data-section="first-section-company" data-value="card-three">Environmental reports for regulations</div>
             </div>
             
         </div>
@@ -87,12 +98,12 @@
     <div class="DescriptionCont">
         <img src="img/descripcion3.png" class="ReferenceImg">
         <div class="Points">
-            <h3>For user</h3>
-            <p>Recycle from home, earn points, and redeem them for rewards. The app guies yu on what, how an where to recycle</p>
+            <h3 data-section="first-section-natuser" data-value="title">For user</h3>
+            <p data-section="first-section-natuser" data-value="text">Recycle from home, earn points, and redeem them for rewards. The app guies yu on what, how an where to recycle</p>
             <div class="Table-info">
-              <div class="Table">Map of nearby recycling points</div>
-              <div class="Table">Personalized Tips</div>
-              <div class="Table">Accumulation of points for recycling</div>
+              <div class="Table" data-section="first-section-natuser" data-value="card-one">Map of nearby recycling points</div>
+              <div class="Table" data-section="first-section-natuser" data-value="card-two">Personalized Tips</div>
+              <div class="Table" data-section="first-section-natuser" data-value="card-three">Accumulation of points for recycling</div>
             </div>
             
           </div>
@@ -104,7 +115,7 @@
  
   <div class="TitleSeparator">
     <hr>
-    <h2>How it Works?</h2>
+    <h2 data-section="nav-bar" data-value="how-works">How it Works?</h2>
     <hr>
   </div>
   
@@ -115,14 +126,14 @@
         <img src="img/company.png" alt="Company Icon">
       </div>
       <div class="HowWork-content">
-        <h3>Company</h3>
+        <h3 data-section="card-company-section" data-value="title">Company</h3>
         <ol>
-          <li>Register and create your environmental profile</li>
-          <li>Connect your waste sources</li>
-          <li>Receive suggestions and volume alerts</li>
-          <li>Download reports or coordinate collections</li>
+          <li data-section="card-company-section" data-value="item-list-one">Register and create your environmental profile</li>
+          <li data-section="card-company-section" data-value="item-list-two">Connect your waste sources</li>
+          <li data-section="card-company-section" data-value="item-list-three">Receive suggestions and volume alerts</li>
+          <li data-section="card-company-section" data-value="item-list-four">Download reports or coordinate collections</li>
         </ol>
-        <button class="try" role="button" onclick="window.location.href=''">
+        <button class="try" role="button" onclick="window.location.href=''" data-section="card-company-section" data-value="button"> 
           Join as a Company
         </button>
       </div>
@@ -133,14 +144,14 @@
         <img src="img/user.png" alt="User Icon">
       </div>
       <div class="HowWork-content">
-        <h3>User</h3>
+        <h3 data-section="card-natuser-section" data-value="title">User</h3>
         <ol>
-          <li>Download the app and create your account</li>
-          <li>Find nearby recycling locations</li>
-          <li>Take your waste or schedule a pickup</li>
-          <li>Earn points and receive recommendations</li>
+          <li data-section="card-natuser-section" data-value="item-list-one">Download the app and create your account</li>
+          <li data-section="card-natuser-section" data-value="item-list-two">Find nearby recycling locations</li>
+          <li data-section="card-natuser-section" data-value="item-list-three">Take your waste or schedule a pickup</li>
+          <li data-section="card-natuser-section" data-value="item-list-four">Earn points and receive recommendations</li>
         </ol>
-        <button class="try" role="button" onclick="window.location.href=''">
+        <button class="try" role="button" onclick="window.location.href=''" data-section="card-natuser-section" data-value="button">
           Join as a User
         </button>
       </div>
@@ -151,7 +162,7 @@
 
 <div class="TitleSeparator">
   <hr>
-  <h2>About Us</h2>
+  <h2 >About Us</h2>
   <hr>
 </div>
 
@@ -159,11 +170,17 @@
   <div class="about-us-container">
       <div class="mission flxCnt">
           <img class="element" src="img/happy-businesswoman-giving-presentation-natural-resources-his-colleagues 1.png" alt="missionImg">
-          <p class="element"> <strong>Mission:</strong> contribute to the development of a more sustainable environment by providing businesses and citizens with digital tools to efficiently monitor, reduce, and manage their waste.</p>
+          <p class="element"> 
+            <strong data-section="mission" data-value="title">Mission</strong>
+            <span data-section="mission" data-value="text">contribute to the development of a more sustainable environment by providing businesses and citizens with digital tools to efficiently monitor, reduce, and manage their waste.</span>
+          </p>
       </div>
       <div class="vision flxCnt">
           <img class="element" src="img/environment-education-day-concept 1.png" alt="vision Image">
-          <p class="element"> <strong>Vision:</strong> contribute to the development of a more sustainable environment by providing businesses and citizens with digital tools to efficiently monitor, reduce, and manage their waste.</p>
+          <p class="element"> 
+            <strong data-section="vision" data-value="title">Vision</strong>
+            <span data-section="vision" data-value="text">contribute to the development of a more sustainable environment by providing businesses and citizens with digital tools to efficiently monitor, reduce, and manage their waste.</span>
+          </p>
       </div>
   </div>
 </section>
@@ -173,7 +190,7 @@
 <section class="faqs-container container" id="faqs" >
   <div class="TitleSeparator">
     <hr>
-    <h2>FAQs</h2>
+    <h2 data-section="nav-bar" data-value="faqs">FAQs</h2>
     <hr>
   </div>
   <div class="faqs-content">
@@ -181,12 +198,12 @@
     <article class="faq-item">
         <div class="questions-answer">
           <h3 class="name-Question">
-            What is CleanWide?
+            <span data-section="faqs-section" data-value="question-one-title">What is CleanWide?</span>
             <span class="questions-arrow">
             <img src="./img/icon.png" width="40" height="40"/>
             </span>
           </h3>
-          <p class="faq-description">
+          <p class="faq-description" data-section="faqs-section" data-value="question-one-text">
             CleanWide is a web-based platform for efficient waste management, aimed at both individuals and businesses. It allows users to monitor and coordinate collections, generate reports, and receive personalized recommendations to promote sustainable practices. Each segment (individuals and businesses) has features tailored to their needs.
           </p>
         </div>
@@ -196,12 +213,12 @@
     <article class="faq-item">
       <div class="questions-answer">
         <h3 class="name-Question">
-          How can I contribute to sustainability through this platform?
+         <span data-section="faqs-section" data-value="question-two-title"> How can I contribute to sustainability through this platform? </span>
           <span class="questions-arrow">
           <img src="../img/icon.png" width="40" height="40"/>
           </span>
         </h3>
-        <p class="faq-description">
+        <p class="faq-description" data-section="faqs-section" data-value="question-two-text">
           Through the platform, you can receive personalized recommendations on how to reduce waste and improve your recycling practices. Additionally, the gamified system and tracking of sustainable achievements will encourage you to implement more responsible actions, such as reducing, reusing, and recycling.
         </p>
       </div>
@@ -211,12 +228,12 @@
       <article class="faq-item">
         <div class="questions-answer">
           <h3 class="name-Question">
-            Can I access detailed reports on waste management?
+            <span  data-section="faqs-section" data-value="question-three-title">Can I access detailed reports on waste management?</span>
             <span class="questions-arrow">
             <img src="./img/icon.png"width="40" height="40"/>
             </span>
           </h3>
-          <p class="faq-description">
+          <p class="faq-description" data-section="faqs-section" data-value="question-three-text">
             Yes, the platform offers detailed reports on the amount of waste generated, classified by type and period. These reports allow for efficient monitoring and informed decision-making to optimize waste management.
           </p>
         </div>
@@ -226,12 +243,12 @@
     <article class="faq-item">
       <div class="questions-answer">
         <h3 class="name-Question">
-          Are there automation options for waste collection?
+          <span data-section="faqs-section" data-value="question-four-title">Are there automation options for waste collection?</span>
           <span class="questions-arrow">
           <img src="./img/icon.png" width="40" height="40"/>
           </span>
         </h3>
-        <p class="faq-description">
+        <p class="faq-description" data-section="faqs-section" data-value="question-four-text">
           Yes, CleanWide offers businesses the ability to automate waste collection by integrating automated collection services. This makes it easy to schedule and efficiently manage collection tasks without constant manual intervention.
         </p>
       </div>
@@ -239,8 +256,8 @@
       </div>
 </section>
 
-<section id="Contact" class="Contact-section">
 
+<section id="Contact" class="Contact-section">
   <div class="Contact-container">
     <div class="Contact-info">
       <p><i class="fas fa-envelope"></i> cleanwide@gmail.com</p>
@@ -248,12 +265,12 @@
       <p><i class="fas fa-mobile-alt"></i> +51 949 313 121</p>
     </div>
     <form class="Contact-form">
-      <h2>Contact</h2>
-      <input type="text" placeholder="Name - Last Name" name="name" required>
-      <input type="tel" placeholder="Phone" name="phone">
-      <input type="email" placeholder="Email" name="email" required>
-      <textarea placeholder="Message" name="message" rows="4" required></textarea>
-      <button type="submit">Submit</button>
+      <h2 data-section="nav-bar" data-value="contact">Contact</h2>
+      <input type="text" placeholder="Name - Last Name" name="name" required data-section="contact-section" data-value="name-placeholder">
+      <input type="tel" placeholder="Phone" name="phone" data-section="contact-section" data-value="phone-placeholder">
+      <input type="email" placeholder="Email" name="email" required data-section="contact-section" data-value="email-placeholder">
+      <textarea data-section="contact-section" data-value="message-placeholder" placeholder="Message" name="message" rows="4" required></textarea>
+      <button type="submit" data-section="contact-section" data-value="button">Submit</button>
     </form>
   </div>
 </section>
@@ -272,15 +289,15 @@
     <div class="SocialCont cnt">
 
       <div class="TermsAndCond ScBox">
-        <div><a href="#">Terms of Use</a></div>
+        <div><a href="#" data-section="footer" data-value="terms-use">Terms of Use</a></div>
         <!--&nbsp code of space-->
         <div>&nbsp&nbsp&nbsp/&nbsp&nbsp&nbsp</div>
-        <div><a href="#">Privacy Policy</a></div>
+        <div><a href="#" data-section="footer" data-value="privacy-policy">Privacy Policy</a></div>
       </div>
       
       <div class="TextCtn ScBox">
         <div class="StartUp"><p>CLEANWIND</p></div>
-        <div class="AccessNetw">Access our networks</div>
+        <div class="AccessNetw" data-section="footer" data-value="text">Access our networks</div>
       </div>
 
       <div class="SocialMediaCont ScBox">
