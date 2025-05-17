@@ -1338,3 +1338,18 @@ the messaje box appers from the rigth to left*/
     width: 92%;
   }
 }
+
+.get-started-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #00A295; /* Verde */
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.get-started-button:hover {
+  background-color: #D9F2EF;
+}

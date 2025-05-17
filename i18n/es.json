@@ -72,5 +72,11 @@
     "terms-use": "Términos de uso",
     "privacy-policy": "Política de privacidad",
     "text": "Accede a nuestras redes"
+  },
+  
+  
+  "button": {
+    "get-started": "Comenzar"
   }
+
 }
