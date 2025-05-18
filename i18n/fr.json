@@ -2,9 +2,10 @@
   "nav-bar": {
     "solution": "Solutions",
     "how-works": "Comment ça marche ?",
-    "about-us": "À propos de nous",
+    "about-us": "À propos de l'équipe",
     "contact": "Contact",
-    "faqs": "FAQ"
+    "faqs": "FAQ",
+    "about-app": "À propos du produit"
   },
   "web-title": {
     "principal": "Gérez vos déchets intelligemment avec CleanWind"
@@ -60,6 +61,15 @@
     "question-three-text": "Oui, la plateforme propose des rapports détaillés sur la quantité de déchets générés, classés par type et période. Ces rapports permettent un suivi efficace et une prise de décision éclairée pour optimiser la gestion des déchets.",
     "question-four-title": "Existe-t-il des options d'automatisation pour la collecte des déchets ?",
     "question-four-text": "Oui, CleanWide permet aux entreprises d'automatiser la collecte des déchets en intégrant des services de collecte automatisés. Cela facilite la planification et la gestion efficace des tâches sans intervention manuelle constante."
+  },
+  "appSection": {
+    "purpose": "Il s'agit d'une application web conçue pour optimiser la gestion des déchets dans les entreprises et les foyers.",
+    "question-msg": "Pourquoi choisir CleanView ?",
+    "with": "Avec",
+    "answ-msg": "vous pouvez surveiller et contrôler vos déchets en temps réel, recevoir des alertes en cas de production excessive et générer des rapports pour respecter la réglementation.",
+    "motivate-msg": "Essayez-la dès aujourd'hui et transformez votre environnement avec plus de propreté.",
+    "company": "Entreprise",
+    "nat-user": "Utilisateur particulier"
   },
   "contact-section": {
     "name-placeholder": "Nom",

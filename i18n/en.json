@@ -2,9 +2,10 @@
     "nav-bar": {
         "solution": "Solutions",
         "how-works": "How it Works?",
-        "about-us": "About Us",
+        "about-us": "About The Team",
         "contact": "Contact",
-        "faqs": "FAQs"
+        "faqs": "FAQs",
+        "about-app": "About the product"
     },
     "web-title": {
         "principal": "Manage your waste intelligently with CleanWind"
@@ -61,6 +62,15 @@
         "question-four-title" : "Are there automation options for waste collection?",
         "question-four-text" : "Yes, CleanWide offers businesses the ability to automate waste collection by integrating automated collection services. This makes it easy to schedule and efficiently manage collection tasks without constant manual intervention."
     },
+    "appSection":{
+        "purpose": "It is a web application designed to optimize waste management in businesses and homes.",
+        "question-msg": "Why choose CleanView?",
+        "with": "With",
+        "answ-msg": "you can monitor and control your waste in real time, receive alerts for excessive waste generation, and generate reports for regulatory compliance.",
+        "motivate-msg": "Try it today and transform your environment with more cleanliness.",
+        "company": "Company",
+        "nat-user": "Natural User"
+    },
     "contact-section":{
         "name-placeholder": "Name",
         "phone-placeholder": "Phone",
@@ -72,5 +82,8 @@
         "terms-use": "Terms of Use",
         "privacy-policy": "Privacy Policy",
         "text": "Access our networks"
+    },
+    "button": {
+        "get-started": "Get Started"
     }
 }

@@ -2,9 +2,10 @@
   "nav-bar": {
     "solution": "Soluciones",
     "how-works": "¿Cómo funciona?",
-    "about-us": "Sobre nosotros",
+    "about-us": "Sobre el equipo",
     "contact": "Contacto",
-    "faqs": "FAQs"
+    "faqs": "FAQs",
+    "about-app": "Sobre el producto"
   },
   "web-title": {
     "principal": "Gestiona tus residuos inteligentemente con CleanWind"
@@ -61,6 +62,15 @@
     "question-four-title": "¿Existen opciones de automatización para la recolección de residuos?",
     "question-four-text": "Sí, CleanWide ofrece a las empresas la posibilidad de automatizar la recolección de residuos mediante la integración de servicios de recolección automatizada. Esto facilita la programación y gestión eficiente de las tareas sin intervención manual constante."
   },
+  "appSection": {
+    "purpose": "Es una aplicación web diseñada para optimizar la gestión de residuos en empresas y hogares.",
+    "question-msg": "¿Por qué elegir CleanView?",
+    "with": "Con",
+    "answ-msg": "puedes monitorear y controlar tus residuos en tiempo real, recibir alertas por generación excesiva y generar reportes para cumplir con la normativa.",
+    "motivate-msg": "Pruébala hoy y transforma tu entorno con más limpieza.",
+    "company": "Empresa",
+    "nat-user": "Usuario natural"
+  },
   "contact-section": {
     "name-placeholder": "Nombre",
     "phone-placeholder": "Teléfono",
@@ -73,8 +83,6 @@
     "privacy-policy": "Política de privacidad",
     "text": "Accede a nuestras redes"
   },
-  
-  
   "button": {
     "get-started": "Comenzar"
   }
